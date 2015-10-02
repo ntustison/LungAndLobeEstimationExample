@@ -7,7 +7,7 @@ Tustison et al., [Atlas-based estimation of lung and lobar anatomy in proton MRI
 
 * Download and install [ANTs](https://github.com/stnava/ANTs).
 * Add the ANTs binary directory to your path environment variable.
-* Run ``exampleLungLobeEstimation.sh`` from the LungandLobeEstimationExample/ directory.
+* Run ``exampleLungLobeEstimation.sh`` from the ``LungandLobeEstimationExample/`` directory.
 
 ## Results
 
