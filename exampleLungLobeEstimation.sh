@@ -49,7 +49,7 @@ for (( i = 1; i < ${#intensityImages[@]}; i++ ))
 #   Estimate target lung mask
 #
 
-jointFusionCommand="antsJointFusion -d 3 -v 1 -t $targetImage -o $targetLungMaskEstimated -r 1 -p 2 -s 3 -a 0.1"
+jointFusionCommand="antsJointFusion -d 3 -v 1 -t $targetImage -o $targetLungMaskEstimated -p 2 -s 3 -a 0.1"
 for (( i = 0; i < ${#warpedImages[@]}; i++ ))
   do
     jointFusionCommand="${jointFusionCommand} -g ${warpedImages[$i]}"
@@ -63,7 +63,7 @@ $jointFusionCommand
 #   Estimate target lobe mask
 #
 
-jointFusionCommand="antsJointFusion -d 3 -v 1 -t $targetImage -o $targetLobeMaskEstimated -r 1 -p 2 -s 3 -a 0.1"
+jointFusionCommand="antsJointFusion -d 3 -v 1 -t $targetImage -o $targetLobeMaskEstimated -p 2 -s 3 -a 0.1"
 for (( i = 0; i < ${#warpedImages[@]}; i++ ))
   do
     jointFusionCommand="${jointFusionCommand} -g ${warpedImages[$i]}"
