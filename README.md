@@ -3,6 +3,16 @@
 Example code and data for the techniques discussed in
 Tustison et al., [Atlas-based estimation of lung and lobar anatomy in proton MRI. _Magn Reson Med_](http://www.ncbi.nlm.nih.gov/pubmed/26222827).
 
+## To do:
+
+* Need to run it through twice as discussed in the paper.  The first run is to simply extract the lungs which gives a better registration for the second round.
+
+## Instructions
+
+* Download and install [ANTs](https://github.com/stnava/ANTs).
+* Add the ANTs binary directory to your path environment variable.
+* Run ``exampleLungLobeEstimation.sh`` from the ``LungandLobeEstimationExample/`` directory.
+
 ## Results
 
 ```
@@ -30,3 +40,4 @@ Lobe mask estimation label overlap measures
          4         0.966887         0.855415         0.922074        0.0926963        0.0331126         0.118769
          5           0.9711         0.917791         0.957133        0.0287653        0.0288997        0.0564376
 ```
+
